@@ -19,6 +19,9 @@ public class LV1_2 {
 
 class Solution2 {
     public int solution(String s) {
+    	
+    	//2021 카카오 채용연계형 인턴십 > 숫자 문자열과 영단어
+    	
         int answer = 0;
         
         int check = 0;

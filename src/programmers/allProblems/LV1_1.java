@@ -19,6 +19,8 @@ public class LV1_1 {
 
 class Solution1 {
     public int[] solution(int[] lottos, int[] win_nums) {
+    	
+    	//2021 Dev-Matching: 웹 백엔드 개발 > 로또의 최고 순위와 최저 순위
         int[] answer = {};
         
         int check = 0;

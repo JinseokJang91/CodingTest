@@ -4,7 +4,6 @@ public class Sort {
 
 	//병합 정렬을 위한 전역 변수
 	private static int[] sorted = new int[8];
-	private static int num = 8;
 	
 	public static void main(String[] args) {
 		
@@ -44,12 +43,14 @@ public class Sort {
 		System.out.println();
 		
 		//병합 정렬 출력 결과 확인
-		//int[] a = {7, 6, 5, 8, 3, 5, 9, 1};
-		int[] a = {7, 6, 5, 8};
+		int[] a = {7, 6, 5, 8, 3, 5, 9, 1};
+		int num = 8;
+		//int[] a = {7, 6, 5, 8};
+		//int num = 4;
 		mergeSort(a, 0, num - 1);
 		System.out.print("병합 정렬 : ");
 		for(int i=0; i<a.length; i++) {
-			System.out.print(sorted[i] + " ");
+			System.out.print(a[i] + " ");
 		}
 		System.out.println();
 
@@ -211,12 +212,7 @@ private static int[] insertionSort(int[] arr) {
 		int k = m;
 		
 		//정렬 배열(sorted 배열)은 반드시 전역 변수로 선언!
-		System.out.println("k값1 : " + k);
-		System.out.print("test1 : ");
-		for(int t=0; t<a.length; t++) {
-			System.out.print(sorted[t] + " ");
-		}
-		System.out.println();
+
 		// 작은 순서대로 배열에 삽입
 		while(i <= middle && j <= n) {
 			if(a[i] <= a[j]) {
@@ -228,12 +224,7 @@ private static int[] insertionSort(int[] arr) {
 			}
 			k++;
 		}
-		System.out.println("k값2 : " + k);
-		System.out.print("test2 : ");
-		for(int t=0; t<a.length; t++) {
-			System.out.print(sorted[t] + " ");
-		}
-		System.out.println();
+
 		// 남은 데이터도 삽입
 		if(i > middle) {
 			for(int t = j; t <= n; t++) {
@@ -246,30 +237,17 @@ private static int[] insertionSort(int[] arr) {
 				k++;
 			}
 		}
-		System.out.println("k값3 : " + k);
-		System.out.print("test3 : ");
-		for(int t=0; t<a.length; t++) {
-			System.out.print(sorted[t] + " "); 
-		}
-		System.out.println();
+
 		// 정렬된 배열을 삽입
 		for(int t = m; t <= n; t++) {
-			a[k] = sorted[t];
-			k++;
+			a[t] = sorted[t];
 		}
-		System.out.println("k값4 : " + k);
-		System.out.print("test4 : ");
-		for(int t=0; t<a.length; t++) {
-			System.out.print(sorted[t] + " ");
-		}
-		System.out.println();
 	}
 	
 	private static void mergeSort(int a[], int m, int n) {
 		// 크기가 1보다 큰 경우
 		if(m < n) {
 			int middle = (m + n) / 2;
-			
 			mergeSort(a, m, middle);		// left는 왼쪽으로 나눌게 없어질때까지 실행된다 -> 첫 단계(a,0,3)
 			mergeSort(a, middle + 1, n);	// right는 left가 끝나면 실행된다 -> 첫 단계(a,4,7)
 			merge(a, m, middle, n);			// right가 끝나면 병합이 실행된다

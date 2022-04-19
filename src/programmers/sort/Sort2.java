@@ -58,6 +58,7 @@ class SolutionSort2 {
                     answer += result[i];
                 }*/
                 
+            	//StringBuilder를 사용하면 메모리 낭비가 훨씬 줄어든다.
                 StringBuilder sb = new StringBuilder();
                 for(int i=0; i<result.length; i++) {
                 	sb.append(result[i]);
@@ -118,7 +119,7 @@ class SolutionSort2 {
 
 
 //고민해본 내용이 담긴 class
-class SolutionSort3 {
+class SolutionSort22 {
     public String solution(int[] numbers) {
     	
     	//코딩테스트 연습 > 정렬 > 가장 큰 수

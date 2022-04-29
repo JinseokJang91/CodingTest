@@ -90,7 +90,49 @@ class SolutionLV1_7 {
     	System.out.println("dayName : " + dayIndex);
     	
     	answer = dayNames[dayIndex];
+    	
+    	/* 스킬 체크 테스트에서 푼 과정
+        int[] arr1 = {1, 3, 5, 7, 8, 10, 12};
+        int[] arr2 = {4, 6, 9, 11};
+        String[] dayArr = {
+          "FRI", "SAT", "SUN", "MON","TUE", "WED", "THU"
+        };
 
+        //윤년은 2월 29일까지 있는 해
+        //List에 31일, 30일 해당하는 월 배열 각각 담는다.
+        List<Integer> list1 = new ArrayList<Integer>();
+        List<Integer> list2 = new ArrayList<Integer>();
+        for(int i=0; i<arr1.length; i++){
+            list1.add(arr1[i]);
+        }
+        for(int i=0; i<arr2.length; i++){
+            list2.add(arr2[i]);
+        }
+
+        int dayCnt = 0;
+        //일단 1월 a 이전 월까지 for문 돌리면서 각 월의 일 수를 더한다.
+        for(int i=1; i<a; i++){
+            if(list1.contains(i)){
+                //System.out.println(i + "월 if ");
+                dayCnt += 31;
+            } else if(list2.contains(i)){
+                //System.out.println(i + "월 else if ");
+                dayCnt += 30;
+            } else{
+                //System.out.println(i + "월 else ");
+                dayCnt += 29;
+            }
+        }
+
+        dayCnt += b-1;
+        int dayIdx = dayCnt%7;
+
+        //System.out.println("dayCnt : " + dayCnt);
+        //System.out.println("dayIdx : " + dayIdx);
+        //System.out.println("ans : " + dayArr[dayIdx]);
+        answer = dayArr[dayIdx];    	
+    	*/
+    	
         return answer;
     }
 }

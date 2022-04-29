@@ -42,6 +42,22 @@ class Solution3 {
             answer = 45 - sum;
         }
         
+        /* 스킬 체크 테스트에서 푼 과정
+        Arrays.sort(numbers);
+        List<Integer> list = new ArrayList<Integer>();
+
+        for(int i=0; i<numbers.length; i++){
+            //System.out.print(numbers[i] + " ");
+            list.add(numbers[i]);
+        }
+
+        answer = 0;
+        for(int i=0; i<10; i++){
+            if(!list.contains(i)){
+                answer += i;
+            }
+        }        
+        */
         return answer;
     }
 }

@@ -49,7 +49,7 @@ class SolutionLV1_14 {
         	// 1,4,7은 무조건 왼손이고, 3,6,9는 무조건 오른손
         	// 따라서 2,5,8,0의 경우만 고려하면 됨
         	// 각 손의 위치를 담을 변수 필요
-        	int[][] numArr = {{1,2,3},{4,5,6},{7,8,9},{0,0,0}};
+        	//int[][] numArr = {{1,2,3},{4,5,6},{7,8,9},{0,0,0}};
         	int lx = 3;
         	int ly = 0;
         	int rx = 3;
@@ -241,54 +241,9 @@ class SolutionLV1_14 {
 					}
 					System.out.println("answer : " + answer);
 				}
-        	}
-        	
-        	
+        	}	
         }
-        
-        
-        
-        
-        
-        
+
         return answer;
-    }
-    
-    public String middleNum(int mx, int my, int lx, int ly, int rx, int ry, String hand) {
-    	
-    	System.out.println("===== middleNum 메소드 실행 =====");
-    	int lGap = 0;
-    	int rGap = 0;
-    	String answer = "";
-    	
-    	lGap = Math.abs(mx-lx) + Math.abs(my-ly);
-		rGap = Math.abs(mx-rx) + Math.abs(my-ry);
-		//System.out.println("lGap : " + lGap);
-		//System.out.println("rGap : " + rGap);
-		if(lGap < rGap) {
-			lx = mx;
-			ly = my;
-			answer += "L";
-			//System.out.println("왼손이 더 가까울 때 : " + answer);
-		}else if(rGap > lGap){
-			rx = mx;
-			ry = my;
-			answer += "R";
-			//System.out.println("오른손이 더 가까울 때 : " + answer);
-		}else {
-			if(hand.equals("left")) {
-				//System.out.println("거리 같고 왼손잡이일 때");
-				lx = mx;
-				ly = my;
-				answer += "L";
-			}else {
-				//System.out.println("거리 같고 오른손잡이일 때");
-				rx = mx;
-				ry = my;
-				answer += "R";
-			}
-		}
-		
-		return answer;
     }
 }

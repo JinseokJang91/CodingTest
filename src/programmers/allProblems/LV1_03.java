@@ -1,6 +1,6 @@
 package programmers.allProblems;
 
-public class LV1_3 {
+public class LV1_03 {
 
 	public static void main(String[] args) {
 		

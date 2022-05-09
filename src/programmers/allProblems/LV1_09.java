@@ -2,7 +2,7 @@ package programmers.allProblems;
 
 import java.util.Scanner;
 
-public class LV1_9 {
+public class LV1_09 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

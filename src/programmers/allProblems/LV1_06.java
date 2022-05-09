@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class LV1_6 {
+public class LV1_06 {
 
 	public static void main(String[] args) {
 		

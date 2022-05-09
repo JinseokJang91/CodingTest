@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class LV1_8 {
+public class LV1_08 {
 
 	public static void main(String[] args) {
 		SolutionLV1_8 sol = new SolutionLV1_8();

@@ -3,7 +3,7 @@ package programmers.allProblems;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LV1_5 {
+public class LV1_05 {
 
 	public static void main(String[] args) {
 		

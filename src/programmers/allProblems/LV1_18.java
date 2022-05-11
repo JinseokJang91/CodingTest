@@ -7,8 +7,8 @@ public class LV1_18 {
 
 	public static void main(String[] args) {
 		SolutionLV1_18 sol = new SolutionLV1_18();
-		//int[] arr = {1,1,3,3,0,1,1};
-		int[]arr = {4,4,4,3,3};
+		int[] arr = {1,1,3,3,0,1,1};
+		//int[]arr = {4,4,4,3,3};
 		int[] answer = {};
 		answer = sol.solution(arr);
 		for(int i=0; i<answer.length; i++) {
@@ -29,17 +29,23 @@ class SolutionLV1_18 {
     	//그리고 배열 arr의 원소들의 순서를 유지해야 한다.
     	//1,1,3,3,0,1,1 이면 1,3,0,1을 리턴
     	
+    	//List를 사용해서 최초 인덱스 0 값은 넣어주고
+    	//i값과 i+1값을 비교해서 이전 값과 같지 않으면 list에 넣어준다.
     	List<Integer> list = new ArrayList<Integer>();
+    	list.add(arr[0]);
     	for(int i=0; i<arr.length; i++) {
     		if(i+1 < arr.length) {
     			if(arr[i] != arr[i+1]) {
-    				list.add(i);
-    			}else {
-    				
+    				list.add(arr[i+1]);
     			}
     		}
     	}
     	
+    	System.out.println("list : " + list);
+    	answer = new int[list.size()];
+    	for(int i=0; i<answer.length; i++) {
+    		answer[i] = list.get(i);
+    	}
     	
     	/* 조건과 일치하지 않으므로 Set은 사용하지 못할듯 - 연속된 숫자만 제거하기 때문
     	Set<Integer> set = new HashSet<Integer>();

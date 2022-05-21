@@ -1,4 +1,4 @@
-package programmers.allProblems;
+package programmers.allProblems.lv1;
 
 public class LV1_23 {
 

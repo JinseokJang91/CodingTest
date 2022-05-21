@@ -1,4 +1,4 @@
-package programmers.allProblems;
+package programmers.allProblems.lv1;
 
 import java.util.ArrayList;
 import java.util.Collections;

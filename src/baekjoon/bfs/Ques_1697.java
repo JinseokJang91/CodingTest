@@ -23,7 +23,7 @@ public class Ques_1697 {
 		
 		//Scanner 대신 아래와 같이 사용 가능
 		/* 
-		BufferedReader br = new BufferedReader(New InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		String input = br.readLine();
 		String[] inputs = input.split(" ");

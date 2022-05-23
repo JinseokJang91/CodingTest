@@ -7,12 +7,12 @@ public class LV1_27 {
 
 	public static void main(String[] args) throws Exception{
 
-		//¿¬½À¹®Á¦ > ÇÏ»þµå ¼ö
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ > ï¿½Ï»ï¿½ï¿½ï¿½ ï¿½ï¿½
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int x = Integer.parseInt(br.readLine());
 		boolean answer = true;
 		
-		//ÇÏ»þµå ¼öÀÌ·Á¸é xÀÇ ÀÚ¸´¼öÀÇ ÇÕÀ¸·Î x°¡ ³ª´©¾îÁ®¾ß ÇÑ´Ù.
+		//ï¿½Ï»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì·ï¿½ï¿½ï¿½ xï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ xï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
 		String str = String.valueOf(x);
 		int sum = 0;
 		for(int i=0; i<str.length(); i++) {
@@ -26,7 +26,7 @@ public class LV1_27 {
 			answer = false;
 		}
 		
-		System.out.println("answer : " + answer);
+		//System.out.println("answer : " + answer);
 	}
 
 }

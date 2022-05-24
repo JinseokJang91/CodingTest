@@ -27,6 +27,7 @@ public class LV1_27 {
 		}
 		
 		//System.out.println("answer : " + answer);
+		//TESTTEST
 	}
 
 }

@@ -19,9 +19,13 @@ class SolutionLV1_31 {
         //n이 어떤 양의 정수 x의 제곱인지 아닌지 판단
     	//true 이면 x+1의 제곱을 리턴
     	//false 이면 -1을 리턴
-    	System.out.println(Math.pow(11, 2));
-    	System.out.println(Math.sqrt(143));
-    	System.out.println((long)Math.sqrt(143) - Math.sqrt(143));
+    	
+    	//Math.sqrt(a) 루트a 값을 구하는 것
+    	//Math.pow(a,b)는 a^b를 구하는 것
+    	//System.out.println(Math.pow(11, 2));
+    	//System.out.println(Math.sqrt(143));
+    	//System.out.println((long)Math.sqrt(143) - Math.sqrt(143));
+    	
     	//Math.sqrt는 double형이므로 소수점이 존재하는 경우(ex) 143)와 달리
     	//long타입으로 바꾼 값은 소수점이 제거된 결과로 나오기 때문에
     	//두 값의 차이를 구해서 0이 아니면 소수점이 존재한다고 증명할 수 있음

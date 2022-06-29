@@ -19,5 +19,7 @@ public class No_11654 {
 			System.out.println((int)result);
 		}
 		
+		br.close();
+		
 	}
 }

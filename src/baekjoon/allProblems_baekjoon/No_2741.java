@@ -14,5 +14,7 @@ public class No_2741 {
 		for(int i=1; i<=N; i++) {
 			System.out.println(i);
 		}
+		
+		br.close();
 	}
 }

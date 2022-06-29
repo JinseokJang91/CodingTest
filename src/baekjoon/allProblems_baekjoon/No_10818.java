@@ -32,6 +32,8 @@ public class No_10818 {
 			System.out.println(list.get(0));
 			
 			//Stack, Queue 사용해서 다시 풀어보자!
+			
+			br.close();
 		}
 	}
 }

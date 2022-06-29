@@ -27,5 +27,7 @@ public class No_11720 {
 			sum += list.get(i);
 		}
 		System.out.println(sum);
+		
+		br.close();
 	}
 }

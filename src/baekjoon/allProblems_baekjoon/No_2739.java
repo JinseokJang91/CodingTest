@@ -15,5 +15,7 @@ public class No_2739 {
 		for(int i=1; i<=9; i++) {
 			System.out.println(N + " * " + i + " = " + (N * i));
 		}
+		
+		br.close();
 	}
 }

@@ -24,5 +24,7 @@ public class No_2439 {
 			x--;
 			System.out.println();
 		}
+		
+		br.close();
 	}
 }

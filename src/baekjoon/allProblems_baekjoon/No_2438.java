@@ -18,5 +18,7 @@ public class No_2438 {
 			}
 			System.out.println();
 		}
+		
+		br.close();
 	}
 }

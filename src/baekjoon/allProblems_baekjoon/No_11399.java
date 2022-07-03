@@ -31,9 +31,10 @@ public class No_11399 {
 		int sum = 0;
 		for(int i=0; i<list.size(); i++) {
 			times += list.get(i);
-			System.out.println("times : " + times);
+			//System.out.println("times : " + times);
 			sum += times;
 		}
-		System.out.println("sum : " + sum);
+		//System.out.println("sum : " + sum);
+		System.out.println(sum);
 	}
 }

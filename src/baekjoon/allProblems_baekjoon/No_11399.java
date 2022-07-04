@@ -35,6 +35,6 @@ public class No_11399 {
 			sum += times;
 		}
 		//System.out.println("sum : " + sum);
-		System.out.println(sum);
+		System.out.println(sum); 
 	}
 }

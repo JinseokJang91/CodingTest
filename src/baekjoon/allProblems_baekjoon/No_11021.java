@@ -30,5 +30,7 @@ public class No_11021 {
 		for(int i=0; i<list.size(); i++) {
 			System.out.println("Case #" + (i+1) + ": " + list.get(i));
 		}
+		
+		br.close();
 	}
 }

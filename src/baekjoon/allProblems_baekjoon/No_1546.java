@@ -40,6 +40,6 @@ public class No_1546 {
 			sum += after.get(i);
 		}
 		avg = sum/len;
-		System.out.println("avg : " + avg);
+		System.out.println(avg);
 	}
 }

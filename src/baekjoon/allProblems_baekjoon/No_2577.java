@@ -8,6 +8,7 @@ public class No_2577 {
 	public static void main(String[] args) throws Exception{
 
 		//2577번 숫자의 개수
+		//0~9까지 숫자 개수 체크
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int A = Integer.parseInt(br.readLine());
@@ -60,6 +61,7 @@ public class No_2577 {
 		}
 		
 		br.close();
+		
 	}
 
 }

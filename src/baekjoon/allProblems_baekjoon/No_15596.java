@@ -18,6 +18,7 @@ public class No_15596 {
 		}
 		long answer = sum(a);
 		System.out.println(answer);
+		br.close();
 	}
 	
 	public static long sum(int[] a) {

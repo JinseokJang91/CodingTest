@@ -55,7 +55,7 @@ public class No_1550 {
 			System.out.println("16진수가 아닌 다른 수를 입력했습니다.");
 		}
 		
-		
+		br.close();
 	}
 
 }

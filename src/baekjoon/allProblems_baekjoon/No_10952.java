@@ -26,6 +26,7 @@ public class No_10952 {
 			list.add(A + B);
 		}
 		
+		//순차적으로 출력
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i));
 		}
